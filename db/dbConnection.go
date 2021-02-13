@@ -1,4 +1,4 @@
-package bd
+package db
  
 import (
     "context"
@@ -29,7 +29,7 @@ func ConnectDB() *mongo.Client{
 }
  
 /*checkConnection es el ping a la BD*/
-func checkConnection() int {
+func CheckConnection() int {
     err := MongoCN.Ping(context.TODO(),nil)
     if err != nil{
         return 0

@@ -1,4 +1,4 @@
-module https: //github.com/ivan-aguiar/phoenix
+module github.com/ivan-aguiar/phoenix
 
 go 1.13
 
