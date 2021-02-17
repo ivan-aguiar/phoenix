@@ -3,13 +3,13 @@ package db
 import (
 	"context"
 	"time"
+
 	"github.com/ivan-aguiar/phoenix/models"
 	"go.mongodb.org/mongo-driver/bson/primitive"
-
 )
 
 //InsertRegister es la función que inserta los datos de usuario en la DB
-func InsertRegister(user models.User) (string, bool, error){
+func InsertRegister(user models.User) (string, bool, error) {
 
 	ctx, cancel := context.WithTimeout(context.Background(), 15*time.Second)
 	defer cancel()
