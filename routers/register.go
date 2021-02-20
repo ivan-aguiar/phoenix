@@ -33,7 +33,7 @@ func Register(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Email already registered", 400)
 	}
 
-	_, status, err := db.InsertRegister(user)
+	_, status, err := db.InsertReg(user)
 	if err != nil {
 		http.Error(w, "An error occurred while registering", 400)
 	}

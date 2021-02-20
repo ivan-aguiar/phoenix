@@ -9,7 +9,7 @@ import (
 )
 
 //InsertRegister es la función que inserta los datos de usuario en la DB
-func InsertRegister(user models.User) (string, bool, error) {
+func InsertReg(user models.User) (string, bool, error) {
 
 	ctx, cancel := context.WithTimeout(context.Background(), 15*time.Second)
 	defer cancel()

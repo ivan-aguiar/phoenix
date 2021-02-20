@@ -7,6 +7,7 @@ import (
 	"github.com/ivan-aguiar/phoenix/models"
 )
 
+// GenerateJWT genera el Json Web Token
 func GenerateJWT(user models.User) (string, error) {
 
 	//Clave privada del JWT
